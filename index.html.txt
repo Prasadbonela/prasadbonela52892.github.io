@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Prasad Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h1>Prasad</h1>
+
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content hidden">
+        <h2>Hi, I'm <span>Prasad</span></h2>
+
+        <p>
+            Electronics & Communication Engineering Student <br>
+            FBAR Researcher | Java Developer | Web Enthusiast
+        </p>
+
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about">
+    <h2 class="section-title hidden">About Me</h2>
+
+    <div class="about">
+        <div class="about-card hidden">
+            <p>
+                I am an Electronics and Communication Engineering student focused on RF MEMS,
+                FBAR filter design, simulation, and modern web technologies.
+            </p>
+        </div>
+
+        <div class="about-card hidden">
+            <p>
+                My interests include COMSOL simulations, Java development,
+                and dynamic web applications.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+    <h2 class="section-title hidden">Skills</h2>
+
+    <div class="skills-container">
+        <div class="skill-box hidden">Java</div>
+        <div class="skill-box hidden">Python</div>
+        <div class="skill-box hidden">COMSOL</div>
+        <div class="skill-box hidden">MATLAB</div>
+        <div class="skill-box hidden">HTML</div>
+        <div class="skill-box hidden">CSS</div>
+        <div class="skill-box hidden">JavaScript</div>
+    </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2 class="section-title hidden">Projects</h2>
+
+    <div class="projects-container" id="projectContainer"></div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2 class="section-title hidden">Contact Me</h2>
+
+    <form class="contact-form hidden">
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea placeholder="Your Message"></textarea>
+
+        <button class="btn">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Prasad Portfolio | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
