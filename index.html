@@ -1,40 +1,190 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prasad Portfolio</title>
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Navbar -->
-<nav>
-    <h1>Prasad</h1>
+<!-- ================= NAVBAR ================= -->
 
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+<header class="hero-section">
 
-<!-- Hero Section -->
-<section class="hero">
+    <nav class="navbar">
 
-    <div class="hero-content hidden">
+        <div class="logo">
+            PG
+        </div>
 
-        <!-- Profile Image -->
-        <img src="images/profile1.jpg" alt="Profile Image" height="60" width="40">
+        <ul class="nav-links">
+            <li><a href="#about">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+        </ul>
 
-        <h2>
-            Hi, I'm <span>Prasad</span>
-        </h2>
+        <a href="#contact" class="contact-btn">
+            CONTACT ME
+        </a>
 
+    </nav>
+
+    <!-- ================= HERO ================= -->
+
+    <div class="hero-container">
+
+        <!-- LEFT IMAGE -->
+        <div class="hero-left">
+
+            <img src="images/profile1.png"
+            alt="Prasad Image"
+            class="hero-image">
+
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="hero-right">
+
+            <p class="intro">
+                Hi, I am
+            </p>
+
+            <h1>
+                Prasad Bonela
+            </h1>
+
+            <h3>
+                Electronics & Communication Engineer
+            </h3>
+
+            <div class="social-icons">
+
+                <a href="mailto:yourmail@gmail.com">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+                <a href="https://github.com/prasadbonela52892" target="_blank">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-container">
+
+        <div class="about-card">
+            <p>
+                I am an Electronics and Communication Engineering student
+                passionate about RF MEMS, FBAR filter design,
+                simulations and modern web technologies.
+            </p>
+        </div>
+
+        <div class="about-card">
+            <p>
+                I enjoy building responsive websites, Java applications,
+                COMSOL simulations and embedded systems projects.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills" class="section dark-bg">
+
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-container">
+
+        <div class="skill-box">Java</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">COMSOL</div>
+        <div class="skill-box">MATLAB</div>
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">React</div>
+
+    </div>
+
+</section>
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects" class="section">
+
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-container" id="projectContainer">
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact" class="section dark-bg">
+
+    <h2 class="section-title">Contact Me</h2>
+
+    <form class="contact-form">
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="submit">
+            Send Message
+        </button>
+
+    </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 Prasad Portfolio | All Rights Reserved
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
         <p>
             Electronics & Communication Engineering Student <br>
             FBAR Researcher | Java Developer | Web Enthusiast
