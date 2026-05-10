@@ -58,6 +58,10 @@ nav ul li a:hover {
     padding: 0 20px;
 }
 
+.hero-content {
+    max-width: 900px;
+}
+
 .hero h2 {
     font-size: 65px;
     margin-bottom: 20px;
@@ -74,6 +78,18 @@ nav ul li a:hover {
     line-height: 1.6;
 }
 
+/* Profile Image */
+.profile-img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid cyan;
+    margin-bottom: 30px;
+    box-shadow: 0 0 40px rgba(0,255,255,0.4);
+}
+
+/* Buttons */
 .btn {
     padding: 14px 32px;
     background: cyan;
@@ -101,6 +117,18 @@ nav ul li a:hover {
     color: black;
 }
 
+/* Social Links */
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    color: cyan;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
 /* Sections */
 section {
     padding: 100px 8%;
@@ -125,6 +153,12 @@ section {
     padding: 40px;
     border-radius: 25px;
     border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    border-color: cyan;
 }
 
 .about-card p {
@@ -165,6 +199,12 @@ section {
     padding: 35px;
     border-radius: 25px;
     border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: cyan;
 }
 
 .project-card h3 {
@@ -236,4 +276,26 @@ footer {
 .show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Responsive */
+@media(max-width:768px) {
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    .profile-img {
+        width: 170px;
+        height: 170px;
+    }
+
 }
