@@ -1,22 +1,34 @@
 // Dynamic Projects
+
 const projects = [
+
     {
         title: "FBAR Filter Design",
-        description: "Designed high-frequency FBAR filters using COMSOL.",
+
+        description:
+            "Designed high-frequency FBAR filters using COMSOL with bandwidth optimization and Q-factor enhancement.",
+
         tech: ["COMSOL", "MATLAB", "RF MEMS"]
     },
 
     {
         title: "Battleship Game",
-        description: "Developed a Java Battleship game using OOP concepts.",
+
+        description:
+            "Developed a Java Battleship game implementing OOP concepts and game logic.",
+
         tech: ["Java", "OOP"]
     },
 
     {
         title: "Portfolio Website",
-        description: "Created responsive portfolio with animations.",
+
+        description:
+            "Created a responsive portfolio with animations and dynamic rendering.",
+
         tech: ["HTML", "CSS", "JavaScript"]
     }
+
 ];
 
 const container = document.getElementById("projectContainer");
@@ -28,21 +40,29 @@ projects.forEach(project => {
     card.classList.add("project-card", "hidden");
 
     card.innerHTML = `
+    
         <h3>${project.title}</h3>
 
         <p>${project.description}</p>
 
         <div class="tags">
+
             ${project.tech.map(tech =>
+
                 `<span class="tag">${tech}</span>`
+
             ).join("")}
+
         </div>
+
     `;
 
     container.appendChild(card);
+
 });
 
 // Scroll Animation
+
 const observer = new IntersectionObserver(entries => {
 
     entries.forEach(entry => {
@@ -50,7 +70,9 @@ const observer = new IntersectionObserver(entries => {
         if(entry.isIntersecting) {
 
             entry.target.classList.add("show");
+
         }
+
     });
 
 });
