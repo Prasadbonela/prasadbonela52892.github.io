@@ -4,43 +4,48 @@
 <head>
 
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Prasad Bonela | Portfolio</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-
-    <link rel="stylesheet"
-          href="style.css">
+    <script src="https://kit.fontawesome.com/5d9d8d4f95.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
 
-<div id="particles"></div>
+<!-- Aurora Background -->
+<div class="aurora">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+<!-- Mouse Glow -->
+<div id="cursor-glow"></div>
+
+<!-- Navigation -->
 
 <header>
 
-<nav class="navbar">
+<nav>
 
 <div class="logo">
-Prasad<span>.</span>
+
+PB
+
 </div>
 
-<ul class="nav-links">
+<ul>
 
 <li><a href="#home">Home</a></li>
 
@@ -54,59 +59,83 @@ Prasad<span>.</span>
 
 </ul>
 
-<div class="menu-btn">
+<a href="assets/resume.pdf" class="resume-btn">
 
-<i class="fa-solid fa-bars"></i>
+Resume
 
-</div>
+</a>
 
 </nav>
 
 </header>
 
+<!-- Hero -->
+
 <section id="home" class="hero">
 
-<div class="hero-content">
+<div class="hero-text">
 
-<h3>Hello, I'm</h3>
+<p class="small-title">
 
-<h1>Prasad Bonela</h1>
-
-<h2>
-<span id="typing"></span>
-</h2>
-
-<p>
-
-Embedded Systems Enthusiast with experience in
-C Programming, Verilog RTL Design, COMSOL
-Multiphysics and FBAR Filter Design.
+WELCOME TO MY PORTFOLIO
 
 </p>
 
-<div class="hero-buttons">
+<h1>
 
-<a href="#projects" class="btn primary">
+Building Intelligent<br>
+
+Embedded Systems.
+
+</h1>
+
+<p class="description">
+
+Hi, I'm <strong>Prasad Bonela</strong>.
+
+Embedded Systems Engineer passionate about
+
+C Programming, Verilog RTL,
+
+COMSOL Multiphysics and VLSI Design.
+
+</p>
+
+<div class="buttons">
+
+<a href="#projects" class="primary">
 
 View Projects
 
 </a>
 
-<a href="#" class="btn secondary">
+<a href="#contact" class="secondary">
 
-Download Resume
+Let's Connect
 
 </a>
 
 </div>
 
-<div class="socials">
+<div class="social">
 
-<a href="#"><i class="fab fa-github"></i></a>
+<a href="#">
 
-<a href="#"><i class="fab fa-linkedin"></i></a>
+<i class="fab fa-github"></i>
 
-<a href="#"><i class="fas fa-envelope"></i></a>
+</a>
+
+<a href="#">
+
+<i class="fab fa-linkedin"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fas fa-envelope"></i>
+
+</a>
 
 </div>
 
@@ -114,18 +143,20 @@ Download Resume
 
 <div class="hero-image">
 
-<div class="profile-circle">
+<div class="image-ring">
 
-<img src="assets/profile.png"
-     alt="Profile">
+<img src="assets/profile.png" alt="Profile">
 
 </div>
 
 </div>
 
 </section>
+<!-- ===========================
+ABOUT
+=========================== -->
 
-<section id="about" class="about">
+<section id="about">
 
 <div class="section-title">
 
@@ -133,23 +164,59 @@ Download Resume
 
 </div>
 
-<div class="about-content">
+<div class="glass about-container">
 
-<div class="about-card">
+<div class="about-left">
 
-<h3>Who Am I?</h3>
+<h3>Embedded Systems Engineer</h3>
 
 <p>
 
-I am an aspiring Embedded Systems and VLSI Engineer passionate about designing reliable hardware and developing efficient software for embedded applications.
+I am passionate about designing reliable embedded systems, digital hardware, and RF MEMS devices. My work focuses on Embedded C, Verilog RTL, COMSOL Multiphysics, FBAR Filters, FPGA Design, and VLSI implementation.
 
 </p>
 
 <p>
 
-My interests include Embedded C, RTL Design, FPGA, COMSOL Multiphysics, FBAR Filters, Digital Electronics, and Microcontrollers.
+I enjoy transforming ideas into efficient hardware and software solutions while continuously learning modern technologies.
 
 </p>
+
+</div>
+
+<div class="about-right">
+
+<div class="info-box">
+
+<h4>Experience</h4>
+
+<p>Embedded Systems</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>Projects</h4>
+
+<p>15+ Academic Projects</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>Research</h4>
+
+<p>FBAR & MEMS Design</p>
+
+</div>
+
+<div class="info-box">
+
+<h4>Location</h4>
+
+<p>India</p>
+
+</div>
 
 </div>
 
@@ -157,61 +224,89 @@ My interests include Embedded C, RTL Design, FPGA, COMSOL Multiphysics, FBAR Fil
 
 </section>
 
-<section id="skills" class="skills">
+<!-- ===========================
+SKILLS
+=========================== -->
+
+<section id="skills">
 
 <div class="section-title">
 
-<h2>Skills</h2>
+<h2>Technical Skills</h2>
 
 </div>
 
 <div class="skills-grid">
 
-<div class="skill-card">
-
-<i class="fa-solid fa-c"></i>
+<div class="glass skill-card">
 
 <h3>C Programming</h3>
 
-</div>
+<div class="progress">
 
-<div class="skill-card">
-
-<i class="fa-solid fa-microchip"></i>
-
-<h3>Embedded Systems</h3>
+<div class="bar" style="width:95%"></div>
 
 </div>
 
-<div class="skill-card">
+</div>
 
-<i class="fa-solid fa-code"></i>
+<div class="glass skill-card">
+
+<h3>Embedded C</h3>
+
+<div class="progress">
+
+<div class="bar" style="width:90%"></div>
+
+</div>
+
+</div>
+
+<div class="glass skill-card">
 
 <h3>Verilog HDL</h3>
 
-</div>
+<div class="progress">
 
-<div class="skill-card">
-
-<i class="fa-solid fa-memory"></i>
-
-<h3>VLSI Design</h3>
+<div class="bar" style="width:88%"></div>
 
 </div>
 
-<div class="skill-card">
+</div>
 
-<i class="fa-solid fa-wave-square"></i>
+<div class="glass skill-card">
 
 <h3>COMSOL</h3>
 
+<div class="progress">
+
+<div class="bar" style="width:85%"></div>
+
 </div>
 
-<div class="skill-card">
+</div>
 
-<i class="fa-solid fa-laptop-code"></i>
+<div class="glass skill-card">
 
 <h3>MATLAB</h3>
+
+<div class="progress">
+
+<div class="bar" style="width:82%"></div>
+
+</div>
+
+</div>
+
+<div class="glass skill-card">
+
+<h3>VLSI Design</h3>
+
+<div class="progress">
+
+<div class="bar" style="width:80%"></div>
+
+</div>
 
 </div>
 
@@ -219,47 +314,57 @@ My interests include Embedded C, RTL Design, FPGA, COMSOL Multiphysics, FBAR Fil
 
 </section>
 
-<section id="projects" class="projects">
+<!-- ===========================
+PROJECTS
+=========================== -->
+
+<section id="projects">
 
 <div class="section-title">
 
-<h2>Projects</h2>
+<h2>Featured Projects</h2>
 
 </div>
 
 <div class="project-grid">
 
-<div class="project-card">
+<div class="glass project-card">
+
+<img src="assets/project1.png">
 
 <h3>FBAR Ladder Filter</h3>
 
 <p>
 
-Designed and simulated an FBAR Ladder Filter using COMSOL Multiphysics.
+Designed and simulated an FBAR ladder filter using COMSOL Multiphysics.
 
 </p>
 
 </div>
 
-<div class="project-card">
+<div class="glass project-card">
 
-<h3>Verilog RTL Designs</h3>
+<img src="assets/project2.png">
+
+<h3>RTL Design</h3>
 
 <p>
 
-Implemented Digital Circuits using Verilog HDL with optimized RTL synthesis.
+Developed RTL designs using Verilog HDL with optimized synthesis.
 
 </p>
 
 </div>
 
-<div class="project-card">
+<div class="glass project-card">
 
-<h3>Embedded C Applications</h3>
+<img src="assets/project3.png">
+
+<h3>Embedded C</h3>
 
 <p>
 
-Developed Embedded Software using C Programming for Microcontroller Systems.
+Implemented embedded firmware for microcontroller applications.
 
 </p>
 
@@ -269,25 +374,35 @@ Developed Embedded Software using C Programming for Microcontroller Systems.
 
 </section>
 
-<section id="contact" class="contact">
+<!-- ===========================
+CONTACT
+=========================== -->
+
+<section id="contact">
 
 <div class="section-title">
 
-<h2>Contact Me</h2>
+<h2>Get In Touch</h2>
 
 </div>
+
+<div class="glass contact-box">
 
 <form>
 
 <input type="text"
-       placeholder="Your Name">
+
+placeholder="Your Name">
 
 <input type="email"
-       placeholder="Your Email">
 
-<textarea placeholder="Your Message"></textarea>
+placeholder="Your Email">
 
-<button class="btn primary">
+<textarea
+
+placeholder="Your Message"></textarea>
+
+<button class="primary">
 
 Send Message
 
@@ -295,13 +410,19 @@ Send Message
 
 </form>
 
+</div>
+
 </section>
+
+<!-- ===========================
+FOOTER
+=========================== -->
 
 <footer>
 
 <p>
 
-© 2026 Prasad Bonela | All Rights Reserved
+© 2026 Prasad Bonela • Designed & Developed by Prasad
 
 </p>
 
