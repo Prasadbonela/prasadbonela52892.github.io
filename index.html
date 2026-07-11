@@ -1,328 +1,314 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prasad Portfolio</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Font Awesome -->
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Prasad Bonela | Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<div id="particles"></div>
 
-<header class="hero-section">
+<header>
 
-    <nav class="navbar">
+<nav class="navbar">
 
-        <div class="logo">
-            PG
-        </div>
+<div class="logo">
+Prasad<span>.</span>
+</div>
 
-        <ul class="nav-links">
-            <li><a href="#about">About me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Portfolio</a></li>
-        </ul>
+<ul class="nav-links">
 
-        <a href="#contact" class="contact-btn">
-            CONTACT ME
-        </a>
+<li><a href="#home">Home</a></li>
 
-    </nav>
+<li><a href="#about">About</a></li>
 
-    <!-- ================= HERO ================= -->
+<li><a href="#skills">Skills</a></li>
 
-    <div class="hero-container">
+<li><a href="#projects">Projects</a></li>
 
-        <!-- LEFT IMAGE -->
-        <div class="hero-left">
+<li><a href="#contact">Contact</a></li>
 
-            <img src="images/profile1.png"
-            alt="Prasad Image"
-            class="hero-image">
+</ul>
 
-        </div>
+<div class="menu-btn">
 
-        <!-- RIGHT CONTENT -->
-        <div class="hero-right">
+<i class="fa-solid fa-bars"></i>
 
-            <p class="intro">
-                Hi, I am
-            </p>
+</div>
 
-            <h1>
-                Prasad Bonela
-            </h1>
-
-            <h3>
-                Electronics & Communication Engineer
-            </h3>
-
-            <div class="social-icons">
-
-                <a href="mailto:yourmail@gmail.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-
-                <a href="https://github.com/prasadbonela52892" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-
-                <a href="https://linkedin.com" target="_blank">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
+</nav>
 
 </header>
 
-<!-- ================= ABOUT ================= -->
+<section id="home" class="hero">
 
-<section id="about" class="section">
+<div class="hero-content">
 
-    <h2 class="section-title">About Me</h2>
+<h3>Hello, I'm</h3>
 
-    <div class="about-container">
+<h1>Prasad Bonela</h1>
 
-        <div class="about-card">
-            <p>
-                I am an Electronics and Communication Engineering student
-                passionate about RF MEMS, FBAR filter design,
-                simulations and modern web technologies.
-            </p>
-        </div>
+<h2>
+<span id="typing"></span>
+</h2>
 
-        <div class="about-card">
-            <p>
-                I enjoy building responsive websites, Java applications,
-                COMSOL simulations and embedded systems projects.
-            </p>
-        </div>
+<p>
 
-    </div>
+Embedded Systems Enthusiast with experience in
+C Programming, Verilog RTL Design, COMSOL
+Multiphysics and FBAR Filter Design.
 
-</section>
+</p>
 
-<!-- ================= SKILLS ================= -->
+<div class="hero-buttons">
 
-<section id="skills" class="section dark-bg">
+<a href="#projects" class="btn primary">
 
-    <h2 class="section-title">Skills</h2>
+View Projects
 
-    <div class="skills-container">
+</a>
 
-        <div class="skill-box">Java</div>
-        <div class="skill-box">Python</div>
-        <div class="skill-box">COMSOL</div>
-        <div class="skill-box">MATLAB</div>
-        <div class="skill-box">HTML</div>
-        <div class="skill-box">CSS</div>
-        <div class="skill-box">JavaScript</div>
-        <div class="skill-box">React</div>
+<a href="#" class="btn secondary">
 
-    </div>
+Download Resume
 
-</section>
+</a>
 
-<!-- ================= PROJECTS ================= -->
+</div>
 
-<section id="projects" class="section">
+<div class="socials">
 
-    <h2 class="section-title">Projects</h2>
+<a href="#"><i class="fab fa-github"></i></a>
 
-    <div class="projects-container" id="projectContainer">
+<a href="#"><i class="fab fa-linkedin"></i></a>
 
-    </div>
+<a href="#"><i class="fas fa-envelope"></i></a>
 
-</section>
+</div>
 
-<!-- ================= CONTACT ================= -->
+</div>
 
-<section id="contact" class="section dark-bg">
+<div class="hero-image">
 
-    <h2 class="section-title">Contact Me</h2>
+<div class="profile-circle">
 
-    <form class="contact-form">
+<img src="assets/profile.png"
+     alt="Profile">
 
-        <input type="text" placeholder="Your Name" required>
+</div>
 
-        <input type="email" placeholder="Your Email" required>
-
-        <textarea placeholder="Your Message"></textarea>
-
-        <button type="submit">
-            Send Message
-        </button>
-
-    </form>
+</div>
 
 </section>
 
-<!-- ================= FOOTER ================= -->
+<section id="about" class="about">
+
+<div class="section-title">
+
+<h2>About Me</h2>
+
+</div>
+
+<div class="about-content">
+
+<div class="about-card">
+
+<h3>Who Am I?</h3>
+
+<p>
+
+I am an aspiring Embedded Systems and VLSI Engineer passionate about designing reliable hardware and developing efficient software for embedded applications.
+
+</p>
+
+<p>
+
+My interests include Embedded C, RTL Design, FPGA, COMSOL Multiphysics, FBAR Filters, Digital Electronics, and Microcontrollers.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="skills" class="skills">
+
+<div class="section-title">
+
+<h2>Skills</h2>
+
+</div>
+
+<div class="skills-grid">
+
+<div class="skill-card">
+
+<i class="fa-solid fa-c"></i>
+
+<h3>C Programming</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-microchip"></i>
+
+<h3>Embedded Systems</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-code"></i>
+
+<h3>Verilog HDL</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-memory"></i>
+
+<h3>VLSI Design</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-wave-square"></i>
+
+<h3>COMSOL</h3>
+
+</div>
+
+<div class="skill-card">
+
+<i class="fa-solid fa-laptop-code"></i>
+
+<h3>MATLAB</h3>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="projects" class="projects">
+
+<div class="section-title">
+
+<h2>Projects</h2>
+
+</div>
+
+<div class="project-grid">
+
+<div class="project-card">
+
+<h3>FBAR Ladder Filter</h3>
+
+<p>
+
+Designed and simulated an FBAR Ladder Filter using COMSOL Multiphysics.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Verilog RTL Designs</h3>
+
+<p>
+
+Implemented Digital Circuits using Verilog HDL with optimized RTL synthesis.
+
+</p>
+
+</div>
+
+<div class="project-card">
+
+<h3>Embedded C Applications</h3>
+
+<p>
+
+Developed Embedded Software using C Programming for Microcontroller Systems.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<div class="section-title">
+
+<h2>Contact Me</h2>
+
+</div>
+
+<form>
+
+<input type="text"
+       placeholder="Your Name">
+
+<input type="email"
+       placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button class="btn primary">
+
+Send Message
+
+</button>
+
+</form>
+
+</section>
 
 <footer>
 
-    <p>
-        © 2026 Prasad Portfolio | All Rights Reserved
-    </p>
+<p>
+
+© 2026 Prasad Bonela | All Rights Reserved
+
+</p>
 
 </footer>
 
 <script src="script.js"></script>
 
 </body>
-</html>
-        <p>
-            Electronics & Communication Engineering Student <br>
-            FBAR Researcher | Java Developer | Web Enthusiast
-        </p>
 
-        <a href="#projects" class="btn">
-            View Projects
-        </a>
-
-        <a href="#contact" class="btn btn-outline">
-            Contact Me
-        </a>
-
-        <a href="resume.pdf" download class="btn">
-            Download Resume
-        </a>
-
-        <!-- Social Links -->
-        <div class="socials">
-
-            <a href="https://github.com/prasadbonela52892" target="_blank">
-                GitHub
-            </a>
-
-            <a href="https://linkedin.com" target="_blank">
-                LinkedIn
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- About -->
-<section id="about">
-
-    <h2 class="section-title hidden">
-        About Me
-    </h2>
-
-    <div class="about">
-
-        <div class="about-card hidden">
-
-            <p>
-                I am an Electronics and Communication Engineering student
-                focused on RF MEMS, FBAR filter design, simulation,
-                and modern web technologies.
-            </p>
-
-        </div>
-
-        <div class="about-card hidden">
-
-            <p>
-                My interests include COMSOL simulations, Java development,
-                dynamic web applications, and embedded systems.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- Skills -->
-<section id="skills">
-
-    <h2 class="section-title hidden">
-        Skills
-    </h2>
-
-    <div class="skills-container">
-
-        <div class="skill-box hidden">Java</div>
-        <div class="skill-box hidden">Python</div>
-        <div class="skill-box hidden">COMSOL</div>
-        <div class="skill-box hidden">MATLAB</div>
-        <div class="skill-box hidden">HTML</div>
-        <div class="skill-box hidden">CSS</div>
-        <div class="skill-box hidden">JavaScript</div>
-        <div class="skill-box hidden">React</div>
-
-    </div>
-
-</section>
-
-<!-- Projects -->
-<section id="projects">
-
-    <h2 class="section-title hidden">
-        Projects
-    </h2>
-
-    <div class="projects-container" id="projectContainer">
-
-    </div>
-
-</section>
-
-<!-- Contact -->
-<section id="contact">
-
-    <h2 class="section-title hidden">
-        Contact Me
-    </h2>
-
-    <form
-            action="https://formsubmit.co/YOUR_EMAIL@gmail.com"
-            method="POST"
-            class="contact-form hidden"
-    >
-
-        <input type="text" placeholder="Your Name" required>
-
-        <input type="email" placeholder="Your Email" required>
-
-        <textarea placeholder="Your Message"></textarea>
-
-        <button class="btn">
-            Send Message
-        </button>
-
-    </form>
-
-</section>
-
-<!-- Footer -->
-<footer>
-
-    <p>
-        © 2026 Prasad Portfolio | All Rights Reserved
-    </p>
-
-</footer>
-
-<script src="script.js"></script>
-
-</body>
 </html>
